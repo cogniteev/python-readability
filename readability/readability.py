@@ -17,8 +17,9 @@ from htmls import get_title
 from htmls import shorten_title
 
 
-logging.basicConfig(level=logging.INFO)
-log = logging.getLogger()
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+log = logging.getLogger(__name__)
 
 
 REGEXES = {
